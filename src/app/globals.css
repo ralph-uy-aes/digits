@@ -1,14 +1,41 @@
 html,
 body {
-  --bs-light-rgb: 236, 236, 236;
+  --bs-dark: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
   box-sizing: border-box;
   height: 100%;
   padding: 0;
   margin: 0;
+  background-size: cover;
+  background: fixed center url('/aerobg.png');;
 }
+
+body .navbar{
+  --bs-navbar-active-color: var(var(--nat-navbar-highlight-text));
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
+.bg-dark a.dropdown-item {
+  color: var(--nat-navbar-bg);
+}
+
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+:root{
+  --nat-navbar-bg: #3f51b5;
+  --nat-navbar-bg-rgb: 50, 70, 100;
+  --nat-navbar-text-color: white;
+  --nat-navbar-highlight-text: skyblue;
+}
+
+footer, footer a{
+  color: var(--nat-navbar-text-color);
 }
