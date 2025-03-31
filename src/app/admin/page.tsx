@@ -4,8 +4,7 @@ import { prisma } from '@/lib/prisma';
 import { adminProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
 import { Contact } from '@prisma/client';
-// eslint-disable-next-line import/extensions
-import ContactCardAdmin from '@/components/ContactCardAdmin.tsx';
+import ContactCardAdmin from '@/components/ContactCardAdmin';
 
 const AdminPage = async () => {
   const session = await getServerSession(authOptions);
