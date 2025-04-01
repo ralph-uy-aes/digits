@@ -14,7 +14,6 @@ import { addContact } from '@/lib/dbActions';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 const onSubmit = async (data: { firstName: string; lastName: string; address: string; description: string; image: string; owner: string }) => {
-  // console.log(`onSubmit data: ${JSON.stringify(data, null, 2)}`);
   await addContact(data);
   swal('Success', 'Your item has been added', 'success', {
     timer: 2000,
@@ -23,7 +22,6 @@ const onSubmit = async (data: { firstName: string; lastName: string; address: st
 
 const AddContactForm: React.FC = () => {
   const { data: session, status } = useSession();
-  // console.log('AddContactForm', status, session);
   const currentUser = session?.user?.email || '';
   const {
     register,
