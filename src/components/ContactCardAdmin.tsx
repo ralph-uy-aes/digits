@@ -7,7 +7,6 @@ import NoteItem from './NoteItem';
 import AddNoteForm from './AddNoteForm';
 // eslint-disable-next-line import/extensions
 
-/* Renders a single row in the List Stuff table. See list/page.tsx. */
 const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) => (
   <Card className="h-100">
     <Card.Header>

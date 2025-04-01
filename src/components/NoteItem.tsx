@@ -4,7 +4,6 @@
 import { ListGroup } from 'react-bootstrap';
 import { Note } from '@prisma/client';
 
-/* Renders a single row in the List Stuff table. See list/page.tsx. */
 const ContactCard = ({ note }: { note: Note }) => (
   <ListGroup.Item>
     <p className="fw-lighter">{note.createdAt.toLocaleDateString('en-US')}</p>
