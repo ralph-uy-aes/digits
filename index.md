@@ -114,17 +114,21 @@ $
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+<img src="doc/landing.png">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
 #### Login page
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
+<img src="doc/login_page.png">
+
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
+<img src="doc/register_page.png">
+
 
 #### Landing (after Login) page, non-Admin user
 
@@ -135,16 +139,21 @@ You can now add new Contacts, and list the Contacts you have created. Note you c
 #### Add Contact page
 
 After logging in, here is the page that allows you to add new contact:
+<img src="doc/add_contact.png">
 
 #### List Contact page
 
 After logging in, here is the page that allows you to list all the Contact you have created:
 
 You click the "Edit" link to go to the Edit Contact page, shown next.
+<img src="doc/list_contact.png">
+
 
 #### Edit Contact page
 
 After clicking on the "Edit" link associated with a contact, this page displays that allows you to change and save it:
+<img src="doc/edit_contact.png">
+
 
 #### Landing (after Login), Admin user
 
@@ -156,6 +165,8 @@ You can define an "admin" user in the settings.json file. This user, after loggi
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Contacts by all of the users:
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
+<img src="doc/admin.png">
+
 
 ### CSS
 
